@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header section -->
+    <header>
+      <nav class="container mx-auto p-4 flex items-center border-b">
+        <!-- Logo -->
+        <div
+          class="text-purple-900 flex gap-[0.2rem] border-r-2 w-fit pr-8 font-medium"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-shield-check"
+          >
+            <path
+              d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+            />
+            <path d="m9 12 2 2 4-4" />
+          </svg>
+          <h3>SecureID</h3>
+        </div>
+
+        <!-- Navigation links -->
+        <ul class="hidden lg:flex gap-10 ml-8">
+          <li>
+            <a
+              class="text-gray-500 font-light hover:text-purple-900 hover:font-medium hover:border-b-2 hover:border-purple-900 pb-6"
+              href="#"
+              >Overview</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-gray-500 font-light hover:text-purple-900 hover:font-medium hover:border-b-2 hover:border-purple-900 pb-6"
+              href="#"
+              >User management</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-gray-500 font-light hover:text-purple-900 hover:font-medium hover:border-b-2 hover:border-purple-900 pb-6"
+              href="#"
+              >Verification request</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-gray-500 font-light hover:text-purple-900 hover:font-medium hover:border-b-2 hover:border-purple-900 pb-6"
+              href="#"
+              >Reports</a
+            >
+          </li>
+        </ul>
+        <!-- Avatar section -->
+        <div class="flex gap-4 items-center ml-auto text-gray-500">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-search"
+          >
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.3-4.3" />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-bell"
+          >
+            <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+            <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+          </svg>
+          <div class="border-l-2 pl-2">
+            <img src="lady.jpg" class="h-10 w-10 rounded-full" alt="aaa" />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header section ends here -->
+
+    <!-- Welcome section -->
+    <section
+      class="flex flex-col items-start md:flex-row justify-between md:items-center container mx-auto p-4 gap-4"
+    >
+      <div>
+        <h2 class="text-2xl font-semibold mb-3">Hi, Ruqayyah</h2>
+        <p class="text-gray-500 font-light">
+          Here's an overview of your dashboard.
+        </p>
+      </div>
+      <button class="bg-purple-900 p-2 rounded-md text-white">
+        Create Request +
+      </button>
+    </section>
+    <!-- Welcome section ends here -->
+
+    <!-- Matrix Section -->
+    <section
+      class="container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-3 mx-auto p-4"
+    >
+      <!-- Matrix card 1-->
+      <div class="bg-purple-50 p-4 rounded-md">
+        <div
+          class="h-10 w-10 rounded-full bg-purple-400 flex justify-center items-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-badge-check"
+          >
+            <path
+              d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"
+            />
+            <path d="m9 12 2 2 4-4" />
+          </svg>
+        </div>
+        <h3 class="text-gray-500 font-medium my-4">TOTAL VERIFICATIONS</h3>
+        <div class="flex justify-between items-end">
+          <h3 class="text-3xl font-semibold">350</h3>
+          <div>
+            <p class="flex gap-1 items-center justify-end">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="green"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-arrow-up"
+              >
+                <path d="m5 12 7-7 7 7" />
+                <path d="M12 19V5" />
+              </svg>
+              <span class="text-green-900">2.5%</span>
+            </p>
+            <p class="text-gray-500 font-light text-sm">
+              Increase since last period
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Matrix card 1 ends -->
+
+      <!-- Matrix card 2-->
+      <div class="bg-blue-50 p-4 rounded-md">
+        <div
+          class="h-10 w-10 rounded-full bg-blue-400 flex justify-center items-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-badge-check"
+          >
+            <path
+              d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"
+            />
+            <path d="m9 12 2 2 4-4" />
+          </svg>
+        </div>
+        <h3 class="text-gray-500 font-medium my-4">COMPLETED VERIFICATIONS</h3>
+        <div class="flex justify-between items-end">
+          <h3 class="text-3xl font-semibold">300</h3>
+          <div>
+            <p class="flex gap-1 items-center justify-end">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="green"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-arrow-up"
+              >
+                <path d="m5 12 7-7 7 7" />
+                <path d="M12 19V5" />
+              </svg>
+              <span class="text-green-900">2.5%</span>
+            </p>
+            <p class="text-gray-500 font-light text-sm">
+              Increase since last period
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Matrix card 2 ends -->
+
+      <!-- Matrix card 3-->
+      <div class="bg-orange-200 p-4 rounded-md">
+        <div
+          class="h-10 w-10 rounded-full bg-orange-300 flex justify-center items-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-badge-check"
+          >
+            <path
+              d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"
+            />
+            <path d="m9 12 2 2 4-4" />
+          </svg>
+        </div>
+        <h3 class="text-gray-500 font-medium my-4">PENDING VERIFICATIONS</h3>
+        <div class="flex justify-between items-end">
+          <h3 class="text-3xl font-semibold">30</h3>
+          <div>
+            <p class="flex gap-1 items-center justify-end">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="green"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-arrow-up"
+              >
+                <path d="m5 12 7-7 7 7" />
+                <path d="M12 19V5" />
+              </svg>
+              <span class="text-green-900">2.5%</span>
+            </p>
+            <p class="text-gray-500 font-light text-sm">
+              Increase since last period
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Matrix card 3 ends-->
+
+      <!-- Matrix card 4-->
+      <div class="bg-orange-50 p-4 rounded-md">
+        <div
+          class="h-10 w-10 rounded-full bg-orange-200 flex justify-center items-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-badge-check"
+          >
+            <path
+              d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"
+            />
+            <path d="m9 12 2 2 4-4" />
+          </svg>
+        </div>
+        <h3 class="text-gray-500 font-medium my-4">FLAGGED VERIFICATIONS</h3>
+        <div class="flex justify-between items-end">
+          <h3 class="text-3xl font-semibold">20</h3>
+          <div>
+            <p class="flex gap-1 items-center justify-end">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="green"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-arrow-up"
+              >
+                <path d="m5 12 7-7 7 7" />
+                <path d="M12 19V5" />
+              </svg>
+              <span class="text-green-900">2.5%</span>
+            </p>
+            <p class="text-gray-500 font-light text-sm">
+              Increase since last period
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Matrix card 4 ends -->
+    </section>
+    <!-- Matrix section ends here -->
+
+    <!-- Quick Action section -->
+    <section class="container mx-auto p-4">
+      <h2 class="text-xl font-semibold">Quick Actions</h2>
+      <section
+        class="my-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6"
+      >
+        <!-- Action card 1 -->
+        <div class="border p-4 rounded-md flex gap-4">
+          <div class="bg-purple-900 text-white p-4 rounded-md shadow-md">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-user-plus"
+            >
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <line x1="19" x2="19" y1="8" y2="14" />
+              <line x1="22" x2="16" y1="11" y2="11" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold">Add Customers</h3>
+            <p class="text-gray-500 font-light text-sm">
+              Begin your KYC process for a new customer
+            </p>
+          </div>
+        </div>
+        <!-- Action card 1 ends here -->
+        <!-- Action card 2 -->
+        <div class="border p-4 rounded-md flex gap-4">
+          <div class="bg-purple-900 text-white p-4 rounded-md shadow-md">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-text-search"
+            >
+              <path d="M21 6H3" />
+              <path d="M10 12H3" />
+              <path d="M10 18H3" />
+              <circle cx="17" cy="15" r="3" />
+              <path d="m21 19-1.9-1.9" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold">Review Verificatons</h3>
+            <p class="text-gray-500 font-light text-sm">
+              View and review pending KYC approvals
+            </p>
+          </div>
+        </div>
+        <!-- Action card 2 ends here -->
+        <!-- Action card 3 -->
+        <div class="border p-4 rounded-md flex gap-4">
+          <div class="bg-purple-900 text-white p-4 rounded-md shadow-md">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-chart-pie"
+            >
+              <path
+                d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z"
+              />
+              <path d="M21.21 15.89A10 10 0 1 1 8 2.83" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold">Generate Reports</h3>
+            <p class="text-gray-500 font-light text-sm">
+              Create detailed reports easily and quickly
+            </p>
+          </div>
+        </div>
+        <!-- Action card 3 ends here -->
+      </section>
+    </section>
+    <!-- Quick Action ends here -->
+
+    <!-- Recent Activities -->
+    <section class="container mx-auto p-4">
+      <div class="flex justify-between items-center mb-4">
+        <h2 class="text-xl font-semibold">Recent activities</h2>
+        <p class="text-purple-800 font-medium">See All</p>
+      </div>
+      <!-- Table Section -->
+      <section class="border rounded-lg">
+        <!-- Table filter -->
+        <div class="flex items-center p-4">
+          <div
+            class="flex border p-2 rounded-lg items-center gap-1 max-w-[400px] w-full mr-auto"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="gray"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-search"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.3-4.3" />
+            </svg>
+            <input
+              type="text"
+              placeholder="Search"
+              class="w-full outline-none"
+            />
+          </div>
+          <div class="flex border py-2 px-4 rounded items-center gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-list-filter"
+            >
+              <path d="M3 6h18" />
+              <path d="M7 12h10" />
+              <path d="M10 18h4" />
+            </svg>
+            <p>Filters</p>
+          </div>
+          <div class="flex border py-2 px-4 rounded items-center gap-2 ml-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-download"
+            >
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" x2="12" y1="15" y2="3" />
+            </svg>
+            <p>Export</p>
+          </div>
+        </div>
+        <!-- Table filter ends here -->
+
+        <!-- Table data -->
+        <table class="w-full">
+          <thead class="bg-gray-50 text-gray-500 border-b-2 text-left">
+            <tr class="">
+              <th class="p-4 font-normal">Timestamp</th>
+              <th class="font-normal">Activity Type</th>
+              <th class="font-normal">Company</th>
+              <th class="font-normal">User</th>
+              <th class="font-normal">Status Description</th>
+              <th class="font-normal">Status</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray-500">
+            <tr class="border-b">
+              <td class="py-6 font-light pl-4">Sept 2, 2024</td>
+              <td class="py-6">New KYC Request</td>
+              <td class="flex items-center py-6 gap-4">
+                <img src="logo.jpg" class="w-10 h-10 rounded-full" alt="" />
+                <span class="text-gray-800 font-medium">ABC Fintech</span>
+              </td>
+              <td class="py-6">John Doe</td>
+              <td class="py-6">Submitted a new KYC request</td>
+
+              <td>
+                <div class="flex items-center justify-between py-6">
+                  <span
+                    class="bg-yellow-100 text-yellow-700 font-medium p-2 rounded-3xl border-2 border-yellow-200"
+                    >Pending Approval</span
+                  >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-ellipsis-vertical"
+                  >
+                    <circle cx="12" cy="12" r="1" />
+                    <circle cx="12" cy="5" r="1" />
+                    <circle cx="12" cy="19" r="1" />
+                  </svg>
+                </div>
+              </td>
+            </tr>
+            <tr class="border-b">
+              <td class="py-6 font-light pl-4">Sept 2, 2024</td>
+              <td class="py-6">Document Approved</td>
+              <td class="flex items-center py-6 gap-4">
+                <img src="logo.jpg" class="w-10 h-10 rounded-full" alt="" />
+                <span class="text-gray-800 font-medium">XYZ Capital</span>
+              </td>
+              <td class="py-6">King Promise</td>
+              <td class="py-6">ID verification document approved</td>
+
+              <td>
+                <div class="flex items-center justify-between py-6">
+                  <span
+                    class="bg-yellow-100 text-yellow-700 font-medium p-2 rounded-3xl border-2 border-yellow-200"
+                    >Completed</span
+                  >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-ellipsis-vertical"
+                  >
+                    <circle cx="12" cy="12" r="1" />
+                    <circle cx="12" cy="5" r="1" />
+                    <circle cx="12" cy="19" r="1" />
+                  </svg>
+                </div>
+              </td>
+            </tr>
+            <tr class="border-b">
+              <td class="py-6 font-light pl-4">Sept 2, 2024</td>
+              <td class="py-6">New KYC Request</td>
+              <td class="flex items-center py-6 gap-4">
+                <img src="logo.jpg" class="w-10 h-10 rounded-full" alt="" />
+                <span class="text-gray-800 font-medium">ABC Fintech</span>
+              </td>
+              <td class="py-6">John Doe</td>
+              <td class="py-6">Submitted a new KYC request</td>
+
+              <td>
+                <div class="flex items-center justify-between py-6">
+                  <span
+                    class="bg-yellow-100 text-yellow-700 font-medium p-2 rounded-3xl border-2 border-yellow-200"
+                    >Pending Approval</span
+                  >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-ellipsis-vertical"
+                  >
+                    <circle cx="12" cy="12" r="1" />
+                    <circle cx="12" cy="5" r="1" />
+                    <circle cx="12" cy="19" r="1" />
+                  </svg>
+                </div>
+              </td>
+            </tr>
+            <tr class="border-b">
+              <td class="py-6 font-light pl-4">Sept 2, 2024</td>
+              <td class="py-6">New KYC Request</td>
+              <td class="flex items-center py-6 gap-4">
+                <img src="logo.jpg" class="w-10 h-10 rounded-full" alt="" />
+                <span class="text-gray-800 font-medium">ABC Fintech</span>
+              </td>
+              <td class="py-6">John Doe</td>
+              <td class="py-6">Submitted a new KYC request</td>
+
+              <td>
+                <div class="flex items-center justify-between py-6">
+                  <span
+                    class="bg-yellow-100 text-yellow-700 font-medium p-2 rounded-3xl border-2 border-yellow-200"
+                    >Pending Approval</span
+                  >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-ellipsis-vertical"
+                  >
+                    <circle cx="12" cy="12" r="1" />
+                    <circle cx="12" cy="5" r="1" />
+                    <circle cx="12" cy="19" r="1" />
+                  </svg>
+                </div>
+              </td>
+            </tr>
+            <tr class="border-b">
+              <td class="py-6 font-light pl-4">Sept 2, 2024</td>
+              <td class="py-6">New KYC Request</td>
+              <td class="flex items-center py-6 gap-4">
+                <img src="logo.jpg" class="w-10 h-10 rounded-full" alt="" />
+                <span class="text-gray-800 font-medium">ABC Fintech</span>
+              </td>
+              <td class="py-6">John Doe</td>
+              <td class="py-6">Submitted a new KYC request</td>
+
+              <td>
+                <div class="flex items-center justify-between py-6">
+                  <span
+                    class="bg-yellow-100 text-yellow-700 font-medium p-2 rounded-3xl border-2 border-yellow-200"
+                    >Pending Approval</span
+                  >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-ellipsis-vertical"
+                  >
+                    <circle cx="12" cy="12" r="1" />
+                    <circle cx="12" cy="5" r="1" />
+                    <circle cx="12" cy="19" r="1" />
+                  </svg>
+                </div>
+              </td>
+            </tr>
+            <tr class="border-b">
+              <td class="py-6 font-light pl-4">Sept 2, 2024</td>
+              <td class="py-6">New KYC Request</td>
+              <td class="flex items-center py-6 gap-4">
+                <img src="logo.jpg" class="w-10 h-10 rounded-full" alt="" />
+                <span class="text-gray-800 font-medium">ABC Fintech</span>
+              </td>
+              <td class="py-6">John Doe</td>
+              <td class="py-6">Submitted a new KYC request</td>
+
+              <td>
+                <div class="flex items-center justify-between py-6">
+                  <span
+                    class="bg-yellow-100 text-yellow-700 font-medium p-2 rounded-3xl border-2 border-yellow-200"
+                    >Pending Approval</span
+                  >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-ellipsis-vertical"
+                  >
+                    <circle cx="12" cy="12" r="1" />
+                    <circle cx="12" cy="5" r="1" />
+                    <circle cx="12" cy="19" r="1" />
+                  </svg>
+                </div>
+              </td>
+            </tr>
+            <tr class="border-b">
+              <td class="py-6 font-light pl-4">Sept 2, 2024</td>
+              <td class="py-6">New KYC Request</td>
+              <td class="flex items-center py-6 gap-4">
+                <img src="logo.jpg" class="w-10 h-10 rounded-full" alt="" />
+                <span class="text-gray-800 font-medium">ABC Fintech</span>
+              </td>
+              <td class="py-6">John Doe</td>
+              <td class="py-6">Submitted a new KYC request</td>
+
+              <td>
+                <div class="flex items-center justify-between py-6">
+                  <span
+                    class="bg-yellow-100 text-yellow-700 font-medium p-2 rounded-3xl border-2 border-yellow-200"
+                    >Pending Approval</span
+                  >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-ellipsis-vertical"
+                  >
+                    <circle cx="12" cy="12" r="1" />
+                    <circle cx="12" cy="5" r="1" />
+                    <circle cx="12" cy="19" r="1" />
+                  </svg>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Table data ends here -->
+
+        <!-- Table Pagination -->
+        <div class="border-t p-4 flex justify-between items-center">
+          <button class="flex border rounded-md gap-2 p-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-arrow-left"
+            >
+              <path d="m12 19-7-7 7-7" />
+              <path d="M19 12H5" />
+            </svg>
+            <span>Previous</span>
+          </button>
+
+          <ul class="flex gap-4 text-gray-500">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>...</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+          </ul>
+
+          <button class="flex border rounded-md gap-2 p-2">
+            <span>Next</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-arrow-right"
+            >
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+        <!-- Table Pagination ends here -->
+      </section>
+      <!-- Table Section ends here -->
+    </section>
+    <!-- Recent Activities ends here -->
+
+    <!-- Tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fontawesome icon link -->
+    <script
+      src="https://kit.fontawesome.com/a61736af53.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Lucide icon cdn link -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  </body>
+</html>
